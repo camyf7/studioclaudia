@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Studio de Beleza Cláudia</title>
+    <meta name="description" content="Entre em contato com o Studio de Beleza Cláudia em Caraguatatuba. Agende seu horário pelo WhatsApp (12) 98251-0015.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Studio Cláudia</h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Nossa História</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="https://wa.me/5512982510015" class="btn btn-primary">Agendar Horário</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contato</h1>
+            <p>Entre em contato e agende seu horário</p>
+        </div>
+    </section>
+
+    <!-- Informações de Contato -->
+    <section class="contato-info">
+        <div class="container">
+            <div class="contato-grid">
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <h3>Endereço</h3>
+                    <p>Rua Ernani Martins de Moraes, 59<br>Caraguatatuba - SP<br>11665-070</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">📞</div>
+                    <h3>Telefone/WhatsApp</h3>
+                    <p>(12) 98251-0015</p>
+                    <a href="https://wa.me/5512982510015" class="btn btn-whatsapp">Enviar Mensagem</a>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">⏰</div>
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Terça a Sábado: 10h às 19h30</p>
+                    <p class="observacao">* Horários especiais mediante agendamento</p>
+                </div>
+                
+               
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa e Formulário -->
+    <section class="mapa-formulario">
+        <div class="container">
+            <div class="mapa-form-content">
+                <div class="mapa">
+                    <h2>Onde Estamos</h2>
+                    <div class="mapa-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.234376108648!2d-45.41332542469006!3d-23.74783136518844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d26c4d4f33e5a5%3A0x5b4b7b8b7b8b7b8b!2sRua%20Ernani%20Martins%20de%20Moraes%2C%2059%20-%20Caraguatatuba%2C%20SP%2C%2011665-070!5e0!3m2!1spt-BR!2sbr!4v1234567890" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <div class="formulario">
+                    <h2>Envie uma Mensagem</h2>
+                    <form id="form-contato" class="contact-form">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefone">Telefone/WhatsApp *</label>
+                            <input type="tel" id="telefone" name="telefone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="servico">Serviço de Interesse</label>
+                            <select id="servico" name="servico">
+                                <option value="">Selecione um serviço</option>
+                                <option value="cabeleireiro">Cabeleireiro</option>
+                                <option value="manicure">Manicure</option>
+                                <option value="pedicure">Pedicure</option>
+                                <option value="sobrancelhas">Sobrancelhas</option>
+                                <option value="roupas">Roupas</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Descreva o que você precisa..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="data">Data Preferencial</label>
+                            <input type="date" id="data" name="data">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="horario">Horário Preferencial</label>
+                            <select id="horario" name="horario">
+                                <option value="">Selecione um horário</option>
+                                <option value="manha">Manhã (10h-12h)</option>
+                                <option value="tarde">Tarde (14h-17h)</option>
+                                <option value="noite">Noite (17h-19h30)</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-large">Enviar Mensagem</button>
+                        <p class="form-obs">* Campos obrigatórios</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>Como faço para agendar um horário?</h3>
+                    <p>Você pode agendar pelo WhatsApp (12) 98251-0015, pelo formulário acima ou pessoalmente no Studio.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Preciso pagar sinal para agendar?</h3>
+                    <p>Para alguns serviços específicos como penteados para festas ou alongamentos, solicitamos um sinal de 50% para garantir o horário.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Qual o prazo para cancelamento?</h3>
+                    <p>Pedimos que cancelamentos sejam feitos com pelo menos 24h de antecedência para que possamos realocar o horário.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Vocês aceitam cartão de crédito?</h3>
+                    <p>Sim, aceitamos cartão de crédito (até 3x), débito, PIX e dinheiro.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Posso levar acompanhante?</h3>
+                    <p>Sim, temos uma área de espera confortável para acompanhantes. Em horários de pico, pedimos compreensão pelo espaço limitado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronta para se transformar?</h2>
+                <p>Agende seu horário e venha descobrir o melhor de você</p>
+                <a href="https://wa.me/5512982510015" class="btn btn-large">Agendar pelo WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Studio de Beleza Cláudia</h3>
+                    <p>Beleza que transforma. Cuidados que realçam sua essência.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><strong>Endereço:</strong> Rua Ernani Martins de Moraes, 59 - Caraguatatuba/SP</p>
+                    <p><strong>Telefone/WhatsApp:</strong> (12) 98251-0015</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horário de Funcionamento</h4>
+                    <p>Terça a Sábado: 10h às 19h30</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Nossa História</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Studio de Beleza Cláudia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>
